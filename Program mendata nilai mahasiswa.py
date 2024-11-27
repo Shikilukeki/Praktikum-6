@@ -85,23 +85,6 @@ def tampilkan():
         print("|                             Belum ada data mahasiswa                                   |")
         print("==========================================================================================")
 
-# Fungsi untuk mencari data mahasiswa
-def cari_data():
-    nim = input("Masukkan NIM mahasiswa yang akan dicari: ")
-    if nim in data_mahasiswa:
-        mahasiswa = data_mahasiswa[nim]
-        print("\nData Mahasiswa:")
-        print("=========================================")
-        print(f"Nama         : {mahasiswa['nama']}")
-        print(f"NIM          : {nim}")
-        print(f"Nilai Tugas  : {mahasiswa['nilai_tugas']}")
-        print(f"Nilai UTS    : {mahasiswa['nilai_uts']}")
-        print(f"Nilai UAS    : {mahasiswa['nilai_uas']}")
-        print(f"Nilai Akhir  : {mahasiswa['nilai_akhir']:.2f}")
-        print("=========================================")
-    else:
-        print("Data tidak ditemukan.")
-
 # Loop utama untuk menampilkan menu dan memproses pilihan
 while True:
     pilihan = menu_utama()
